@@ -1,0 +1,503 @@
+@import url(style.css);
+@import url(/museo-sans-rounded-webfont/fonts.css);
+
+#wrapper{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/*Her er css koden til naven(det hele blev lidt fu**ed så vi var nød til at lave den i hver css */
+
+#searchinput input{
+    font-family: 'Museo Sans Rounded 100';
+    width: 24em;
+}
+
+
+#searchinput{  
+
+    height: 1.5em;
+    width: 20em;
+    border-radius: 2px;
+    
+    justify-content: space-between;
+    border: none;
+    padding: 0.2em;
+    background-color: white;
+}
+
+#searchinput button, input{
+    background-color: white;
+    color: grey;
+    border: none;
+}
+
+#searchinput :focus{
+    outline: none;
+}
+
+.topnav_search {
+    height: 3em;
+    justify-content: space-between;
+    padding-right: 1em;
+    background-color: black;
+    border-bottom: solid 1px #413a27;
+    align-items: center;
+    display: flex;
+    gap: 2em;
+}
+
+.topnav_right{
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    gap: 2em;
+}
+
+.topnav_right a{
+    text-decoration: none;
+}
+
+.topnav_right_icon_text {
+    font-size: 12px;
+}
+
+.topnav_search p {
+    color: white;
+}
+
+.topnav_black_line {
+    color: black;
+}
+
+.topnav_button {
+    font-size: 10px;
+    color: white;
+    padding: 0.5em;
+    background-color: #1ba4f3;
+    border: none;
+    border-radius: 5px;
+}
+
+.topnav_logo{
+    padding-left: 0.2em;
+    width: 45px;
+}
+
+
+
+
+
+/*Nu kommer stylingen til produktet*/
+.productBox{
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    
+    
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+}
+.product{
+    padding: 0 1rem;
+   
+    font-family: 'Museo Sans Rounded 100';
+}
+.product__image{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.product__imageDiv{
+    border: 1px solid rgba(0, 0, 0, 0.502);
+    height: 250px;
+    margin: 0 auto;
+    width: 200px;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    
+}
+.product__name{
+    padding-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    
+}
+.product__price{
+    text-align: center;
+    padding-top: 0.5rem;
+    color: rgb(165, 144, 98);
+    font-size: 1.5rem;
+    font-family: 'Museo Sans Rounded 300';
+}
+.product__link{
+    background-color: rgb(160, 146, 120);
+    text-decoration: none;
+    padding: 1rem;
+    width: 220px;
+    margin: 0 auto;
+    margin-top: 1rem;
+
+    text-align: center;
+    color: aliceblue;
+    display: block;
+    font-family: 'Museo Sans Rounded 500';
+}
+.productSelec__heading{
+    text-align: center;
+    margin: 1rem 0;
+    font-family: 'Museo Sans Rounded 500'
+}
+
+.sortData{
+       
+    font-family: 'Museo Sans Rounded 500';
+    display: grid;
+    grid-template-columns: 0.8fr 1fr 1fr;
+    background-color: rgb(197, 197, 197);
+    padding: 1rem;
+    grid-template-rows: repeat(2,1fr);
+}
+#sortBy{
+    border-radius: 1px;
+   
+
+}
+.sortData__viewAs{
+    display: flex;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    align-items: end;
+    gap: 1rem;
+}
+/*Her styler jeg knapperne*/
+.sortData__viewAs button{
+    background-color: transparent;
+    border: none;
+   
+    align-self: center;
+    font-size: 1rem;
+}
+.sortData__viewAs button.selectet{
+    color: rgb(160, 146, 120);
+}
+.sortData__items{
+ display: flex;   
+ grid-column: 3/4;
+ gap: 1rem;
+ justify-content: end;
+}
+.sortData__items p{
+    font-weight: 800;
+}
+ /*Dette er stylingen til boksene ude i venstre side*/
+ .categorySelect{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    padding-top: 1rem;
+    max-width: 100%;
+    font-family: 'Museo Sans Rounded 500';
+ }
+.categoryListDiv{
+    padding-bottom: 2rem;
+   padding-left: 2rem;
+   background-color: rgb(197, 197, 197);
+}
+.categoryList{
+    list-style: none;
+    
+}
+
+.categoryList__Link{
+    text-decoration: none;
+    
+    color: rgb(164, 147, 114);
+}
+.categoryList__listItem{
+    padding-top: 0.5rem;
+}
+.categoryList__listItem a.selectedCat{
+    color: black;
+}
+/*Nu kommer css til den anden boks, den nedenunder*/
+.categoryfilter{
+    padding-bottom: 2rem;
+    
+    padding-top: 2rem;
+    padding-left: 2rem;
+    background-color: rgb(197, 197, 197);
+}
+.categorySelect__heading{
+    color: rgb(160, 146, 120);
+    font-size: 1rem;
+}
+.categoryfilter__text{
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+}
+.categoryPriceList__listItem{
+    padding-top: 0.3rem;
+}
+.categoryPriceList{
+    list-style: none;
+   
+    text-decoration: none;
+    color: rgb(160, 146, 120);
+}
+.categoryPriceList__listItem .selectedPrice{
+    color: #413a27;
+}
+/*Css koden til den nederste del*/
+ .categorymanufactor__listItem{
+    list-style: none;
+    
+    padding-top: 0.3rem;
+ }
+ .categorymanufactor__listItem .selectedManu{
+    color: #413a27;
+ }
+ .categorymanufactor__link{
+    color: rgb(160, 146, 120);
+    text-decoration: none;
+ }
+
+.manufactor-rigth{
+    padding-top: 1rem;
+    grid-column: 3/4;
+    grid-row: 1/2;
+  
+}
+.manufactor-rigth__heading{
+    color: rgb(160, 148, 106);
+    font-family: 'Museo Sans Rounded 500';
+    font-size: 1rem;
+}
+.manufactor-rigth__list{
+    list-style: none;
+    font-family: 'Museo Sans Rounded 500';
+   
+    color: rgb(83, 81, 60);
+   
+}
+.manufactor-rigth__listItem{
+    padding-top: 0.7rem;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+.manufactor-rigth__listItem:last-of-type{
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+    
+}
+.manufactor-rigth__link{
+    color: rgb(160, 146, 120);
+    text-decoration: none;
+}
+
+
+@media only screen and (min-width: 600px) {
+    #wrapper{
+        max-width: 100%;
+    }
+    main{
+        width: 95%;
+        margin: 0 auto;
+    }
+    #searchinput{
+        display: flex;
+    }
+    .productBox{
+        grid-template-columns: repeat(3,1fr);
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-top: 10rem;
+      
+    }
+    /*Her kommer css stylingen til productbox når den skal vises som en liste*/
+    .productBoxList{
+      grid-template-columns: 1fr;
+      margin-top: 20rem;
+    }
+    .productBoxList .product{
+        height: 200px;
+        overflow: hidden;
+      }
+    .productBoxList a.product__link{
+        height: 30px;
+        padding: 0.4rem;
+        align-self: center;
+    }
+    .productBoxList .product{
+     display: flex;
+     width: 500px;
+    }
+
+
+
+
+
+    .productSelec{
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 0.5fr;
+        gap: 1rem;
+    }
+    .productSelec__topBox{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .productSelec__heading{
+        font-family: 'Museo Sans Rounded 300';
+        padding:  1rem 0;
+
+    }
+    /*Nu kommer css'en til sortering boksen*/
+    .sortData{
+       
+        font-family: 'Museo Sans Rounded 500';
+        display: grid;
+        grid-template-columns: 0.8fr 1fr 1fr;
+        background-color: rgb(197, 197, 197);
+        padding: 1rem;
+        grid-template-rows: repeat(2,1fr);
+    }
+    #sortBy{
+        border-radius: 1px;
+       
+
+    }
+    .sortData__viewAs{
+        display: flex;
+        grid-row: 2/3;
+        grid-column: 2/3;
+        align-items: end;
+        gap: 1rem;
+    }
+    /*Her styler jeg knapperne*/
+    .sortData__viewAs button{
+        background-color: transparent;
+        border: none;
+       
+        align-self: center;
+        font-size: 1rem;
+    }
+    .sortData__viewAs button.selectet{
+        color: rgb(160, 146, 120);
+    }
+    .sortData__items{
+     display: flex;   
+     grid-column: 3/4;
+     gap: 1rem;
+     justify-content: end;
+    }
+    .sortData__items p{
+        font-weight: 800;
+    }
+     /*Dette er stylingen til boksene ude i venstre side*/
+     .categorySelect{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 400px;
+        margin-bottom: 50rem;
+        width: 300px;
+        padding-top: 1rem;
+        font-family: 'Museo Sans Rounded 500';
+     }
+    .categoryListDiv{
+        padding-bottom: 2rem;
+       padding-left: 2rem;
+       background-color: rgb(197, 197, 197);
+    }
+    .categoryList{
+        list-style: none;
+        
+    }
+   
+    .categoryList__Link{
+        text-decoration: none;
+        
+        color: rgb(164, 147, 114);
+    }
+    .categoryList__listItem{
+        padding-top: 0.5rem;
+    }
+    .categoryList__listItem a.selectedCat{
+        color: black;
+    }
+    /*Nu kommer css til den anden boks, den nedenunder*/
+    .categoryfilter{
+        padding-bottom: 2rem;
+        margin-top: 1.5rem;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        background-color: rgb(197, 197, 197);
+    }
+    .categorySelect__heading{
+        color: rgb(160, 146, 120);
+        font-size: 1rem;
+    }
+    .categoryfilter__text{
+        padding-bottom: 0.5rem;
+        padding-top: 1rem;
+    }
+    .categoryPriceList__listItem{
+        padding-top: 0.3rem;
+    }
+    .categoryPriceList{
+        list-style: none;
+       
+        text-decoration: none;
+        color: rgb(160, 146, 120);
+    }
+    .categoryPriceList__listItem .selectedPrice{
+        color: #413a27;
+    }
+/*Css koden til den nederste del*/
+     .categorymanufactor__listItem{
+        list-style: none;
+        padding-top: 0.3rem;
+        text-align: left;
+     }
+     .categorymanufactor__listItem .selectedManu{
+        color: #413a27;
+     }
+     .categorymanufactor__link{
+        
+        color: rgb(160, 146, 120);
+        text-decoration: none;
+     }
+
+    .manufactor-rigth{
+        padding-top: 1rem;
+        grid-column: 3/4;
+        grid-row: 1/2;
+      
+    }
+    .manufactor-rigth__heading{
+        color: rgb(160, 148, 106);
+        font-family: 'Museo Sans Rounded 500';
+        font-size: 1rem;
+    }
+    .manufactor-rigth__list{
+        list-style: none;
+        font-family: 'Museo Sans Rounded 500';
+       
+        color: rgb(83, 81, 60);
+       
+    }
+    .manufactor-rigth__listItem{
+        padding-top: 0.7rem;
+        padding-left: 1rem;
+        cursor: pointer;
+    }
+    .manufactor-rigth__listItem:last-of-type{
+        padding-top: 1rem;
+        padding-left: 0.5rem;
+        
+    }
+    .manufactor-rigth__link{
+        color: rgb(160, 146, 120);
+        text-decoration: none;
+    }
+    
+}

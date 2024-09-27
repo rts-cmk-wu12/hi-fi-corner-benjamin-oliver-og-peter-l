@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hifi-Klubben</title>
+    <script type="module" src="fetch-random-product-on-index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles/frontpage.css">
+    <script defer src="burgermenu.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="topnav">
+                <i class="fa-solid fa-bars burgermneuButton"></i>
+                <i class="fa-solid fa-xmark burgermneuCloseButton"></i>
+                <p><i class="fa-solid fa-location-dot"></i></p>
+                <p><i class="fa-solid fa-phone"></i></p>
+                <p><i class="fa-regular fa-envelope"></i></p>
+                <button class="topnav_button"><i class="fa-solid fa-envelope"></i><span
+                        class="topnav_black_line">|</span>Subscribe</button>
+            </div>
+            <nav class="navbar">
+                <ul class="navbar_list">
+                    <li><a class="navbar_active" href="index.html">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="brands.html">BRANDS</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">EVENTS</a></li>
+                    <li><a href="shop-frontpage.html">SHOP</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="hero">
+                <img class="hero__img" src="images/hero-image-frontPage.JPG" alt="">
+                <div class="hero__centerDiv">
+                <div class="hero__textBox">
+                    <h1 class="hero__heading">HI <br> FI
+                    </h1>
+                </div>
+                <p class="hero__text">HIFICORNER.CO.UK</p>
+            </div>
+            </div>
+            <section class="news-message">
+               <img class="news-message__img" src="images/wavy-lines.png" alt="">
+                <h2 class="news-message__heading">OUR EDINGBURG SHOWROOM HAS NOW MOVED TO STUNNING NEW PREMISES ON JERSEY ROADS </h2>
+            </section>
+            <article class="product-show">
+                <div class="product-show__arrows">
+                    <i class="fa-solid fa-chevron-left product-show__prev" id="prev"></i>
+                    <i class="fa-solid fa-chevron-right product-show__next" id="next"></i>
+                </div>
+                <h2 class="product-show__productName">PRMILUDNA SOUNDS</h2>
+                <img src="images/Produktbilleder/pladespillere/Pro_ject_Debut_III_yellow_1.jpg" class="product-show__productImg" alt="">
+            </article>
+            <!--Her kommer sociale medier div'en-->
+            <div class="social-and-news">
+                <div class="social-and-news__socials">
+                    <div class="social-and-news__social"><img class="social-and-news__socialImg"
+                            src="images/hero-image-frontPage.JPG" alt=""><a href="twitter.com" class="social-and-news__logo"><i class="fa-brands fa-facebook "></i></a></div>
+                    <div class="social-and-news__social"><img class="social-and-news__socialImg"
+                            src="images/hero-image-frontPage.JPG" alt=""><a href="twitter.com" class="social-and-news__logo"><i class="fa-brands fa-blogger"></i></a></div>
+                    <div class="social-and-news__social"><img class="social-and-news__socialImg"
+                            src="images/hero-image-frontPage.JPG" alt=""><a href="twitter.com" class="social-and-news__logo"><i class="fa-brands fa-twitter"></i></a></div>
+                </div>
+                <div class="social-and-news__newsBox">
+                    <article class="social-and-news__news">
+                        <h2 class="social-and-news__heading">HISTORY</h2>
+                        <p class="social-and-news__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nulla consectetur, aspernatur placeat cum blanditiis!</p>
+                    </article>
+                    <article class="social-and-news__news">
+                        <h2 class="social-and-news__heading">NEWS</h2>
+                        <p class="social-and-news__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, dolor?</p>
+                    </article>
+                    <article class="social-and-news__news">
+                        <h2 class="social-and-news__heading">Shop</h2>
+                        <p class="social-and-news__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim id dolorum explicabo quisquam necessitatibus atque, voluptatem assumenda illo.</p>
+                    </article>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer_container">
+                <div class="footer_container_left">
+                    <ul>
+                        <li>Hi-Fi Corner</li>
+                        <li>Edinburgh 2 Joppa Road EH15 2EU</li>
+                        <li>Falkirk 44 Cow Wynd FK1 1PU</li>
+                    </ul>
+     
+                    <div>
+                        <a href="#">Returns & Refunds <span>|</span></a> <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+     
+                <div class="footer_container_right">
+                    <div class="footer_container_right_payments">
+                        <img src="footerpics/worldpay.png" alt="">
+                        <img src="footerpics/visa.png" alt="">
+                        <img src="footerpics/mastercard.png" alt="">
+                        <img src="footerpics/maestro.png" alt="">
+                        <img src="footerpics/jcb.png" alt="">
+                        <img src="footerpics/brand-paypal.png" alt="">
+                    </div>
+     
+                    <div class="footer_container_right_socials">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+     
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

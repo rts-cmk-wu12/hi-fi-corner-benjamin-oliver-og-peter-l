@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="styles/products.css">
+    <script src="js-files/fetchProducts.js" type="module"></script>
+    <script src="js-files/showWindOrList.js" type="module"></script>
+    <script defer src="burgermenu.js"></script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <header>
+            <div class="topnav_search">
+                <div class="topnav_logo">
+                    <img src="brandsbilleder/hificorner-logo.png" alt="">
+                </div>
+
+                <div class="topnav_right">
+
+
+                    <form id="searchinput" action="#">
+                        <input type="text" placeholder="Search entire store here..." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                    <i class="fa-solid fa-bars burgermneuButton"></i>
+                    <i class="fa-solid fa-xmark burgermneuCloseButton"></i>
+
+                    <p class="topnav_right_icon_text"><i class="fa-solid fa-user" style="color: #999999;"></i> ACCOUNT</p>
+                    <a href="cart.html"><p class="topnav_right_icon_text"><i class="fa-solid fa-cart-shopping" style="color: #999999;"></i>CART</p></a>
+                    <p><i class="fa-solid fa-location-dot"></i></p>
+                    <p><i class="fa-solid fa-phone"></i></p>
+                    <p><i class="fa-regular fa-envelope"></i></p>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul class="navbar_list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="brands.html">BRANDS</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">EVENTS</a></li>
+                    <li><a class="navbar_active" href="shop-frontpage.html">SHOP</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </nav>
+
+            </header>
+    
+        <main>
+            <article class="productSelec">
+                <section class="categorySelect">
+                    <div class="categoryListDiv">
+                        <ul class="categoryList">
+                            <li class="categoryList__listItem"><a class="categoryList__Link selectedCat"
+                                    href="products.html?">Alle produkter</a></li>
+                            <li class="categoryList__listItem"><a class="categoryList__Link"
+                                    href="products.html?category=cd-afspillere">cd-afspillere</a></li>
+                            <li class="categoryList__listItem"><a class="categoryList__Link"
+                                    href="products.html?category=dvd-afspillere">dvd-afspillere</a></li>
+                            <li class="categoryList__listItem"><a class="categoryList__Link"
+                                    href="products.html?category=effektforstaerkere">effektforstaerkere</a></li>
+                            <li class="categoryList__listItem"><a class="categoryList__Link"
+                                    href="products.html?category=forforstaerkere">forforstaerkere</a></li>
+                            <li class="categoryList__listItem"><a class="categoryList__Link"
+                                    href="products.html?category=hojtalere">hojtalere</a></li>
+                            <li class="categoryList__listItem"><a class="categoryList__Link"
+                                    href="products.html?category=int-forstaerkere">int-forstaerkere</a></li>
+                            <li class="categoryList__listItem"><a class="categoryList__Link"
+                                    href="products.html?category=pladespillere">pladespillere</a></li>
+                            <li class="categoryList__listItem"><a class="categoryList__Link"
+                                    href="products.html?category=roer-forstaerkere">roer-forstaerkere</a></li>
+                        </ul>
+                    </div>
+                    <div class="categoryfilter">
+                        <h2 class="categorySelect__heading">SHOP BY</h2>
+                        <p class="categoryfilter__text">Filter</p>
+                        <p class="categoryfilter__text">PRICE</p>
+                        <ul class="categoryPriceList">
+                            <li class="categoryPriceList__listItem"><a class="categoryPriceList"
+                                    href="products.html?price=200">Under 200(<span id="under200"></span>)</a></li>
+                            <li class="categoryPriceList__listItem"><a class="categoryPriceList"
+                                    href="products.html?price=300">Under 300(<span id="under300"></span>)</a></li>
+                            <li class="categoryPriceList__listItem"><a class="categoryPriceList"
+                                    href="products.html?price=500">Under 500(<span id="under500"></span>)</a></li>
+                            <li class="categoryPriceList__listItem"><a class="categoryPriceList"
+                                    href="products.html?price=1000">Under 1000(<span id="under1000"></span>)</a></li>
+                            <li class="categoryPriceList__listItem"><a class="categoryPriceList"
+                                    href="products.html?price=2000">Under 2000(<span id="under2000"></span>)</a></li>
+                            <li class="categoryPriceList__listItem"><a class="categoryPriceList"
+                                    href="products.html?price=3000">Under 3000(<span id="under3000"></span>)</a></li>
+                            <li class="categoryPriceList__listItem"><a class="categoryPriceList"
+                                    href="products.html?price=4000">Under 4000(<span id="under4000"></span>)</a></li>
+                        </ul>
+                        <p class="categoryfilter__text">Manufactor</p>
+                        <ul class="categorymanufactor">
+                            <li class="categorymanufactor__listItem"> <a class="categorymanufactor__link"
+                                    href="products.html?company=creek">creek(<span id="creek"></span>)</a></li>
+                            <li class="categorymanufactor__listItem"> <a class="categorymanufactor__link"
+                                    href="products.html?company=exp">Exp(<span id="exp"></span>)</a></li>
+                            <li class="categorymanufactor__listItem"> <a class="categorymanufactor__link"
+                                    href="products.html?company=exposure">Exposure(<span id="exposure"></span>)</a></li>
+                            <li class="categorymanufactor__listItem"> <a class="categorymanufactor__link"
+                                    href="products.html?company=parasound">paraSound(<span id="parasound"></span>)</a>
+                            </li>
+                            <li class="categorymanufactor__listItem"> <a class="categorymanufactor__link"
+                                    href="products.html?company=manley">manley(<span id="manley"></span>)</a></li>
+                            <li class="categorymanufactor__listItem"> <a class="categorymanufactor__link"
+                                    href="products.html?company=project">project(<span id="project"></span>)</a></li>
+                            <li class="categorymanufactor__listItem"> <a class="categorymanufactor__link"
+                                    href="products.html?company=boesendorfer">bosendorf(<span
+                                        id="boesendorfer"></span>)</a></li>
+                            <li class="categorymanufactor__listItem"> <a class="categorymanufactor__link"
+                                    href="products.html?company=epos">epos(<span id="epos"></span>)</a></li>
+                            <li class="categorymanufactor__listItem"> <a class="categorymanufactor__link"
+                                    href="products.html?company=harbeth">harbeth(<span id="harbeth"></span>)</a></li>
+                            <li class="categorymanufactor__listItem"> <a class="categorymanufactor__link"
+                                    href="products.html?company=pro">Pro(<span id="pro"></span>)</a></li>
+                            <li class="categorymanufactor__listItem"> <a class="categorymanufactor__link"
+                                    href="products.html?company=jolida">jolida(<span id="jolida"></span>)</a></li>
+
+
+
+                        </ul>
+
+
+
+
+
+
+                    </div>
+
+                </section>
+                <section class="productSelec__topBox">
+                    <h1 class="productSelec__heading">Alle produkter</h1>
+                    <form class="sortData">
+                        <div class="sortData__sortBy">
+                            <label for="sortBy">SORT BY:</label><select name="sortBy" id="sortBy">
+                                <option value="">Select</option>
+                                <option value="?_sort=price&_order=asc">Price: low to high</option>
+                                <option value="?_sort=price&_order=desc">Price: high to low</option>
+                                <option value="?_sort=name&_order=asc">Alfhabethic</option>
+
+                            </select>
+                        </div>
+                        <div class="sortData__viewAs">
+                            <label for="viewAs">VIEW AS:</label> <button class="sortData__viewAsWindows selectet"><i
+                                    class="fa-brands fa-windows"></i></button>
+                            <button class="sortData__viewAsList"><i class="fa-solid fa-bars"></i></button>
+                        </div>
+                        <div class="sortData__items">
+                            <p id="shownItems"></p>
+                            <label for="show">SHOW:</label>
+                            <select name="show" id="show">
+                                <option id="alreadyShown" value="5">--Please choose an option--</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="1000">all</option>
+
+                            </select>
+                            <div>
+
+                </section>
+                <!--Dette er den box, hvor produkterne bliver dynamisk sat ind-->
+                <div class="productBox">
+
+                </div>
+                <section class="manufactor-rigth">
+                    <h2 class="manufactor-rigth__heading">MANUFACTOR</h2>
+                    <ul class="manufactor-rigth__list">
+                        <li class="manufactor-rigth__listItem">ARCEM</li>
+                        <li class="manufactor-rigth__listItem">ARSTELL AND KERN</li>
+                        <li class="manufactor-rigth__listItem">ATC</li>
+                        <li class="manufactor-rigth__listItem">AVID</li>
+                        <li class="manufactor-rigth__listItem">CHORD ELECTRONICS</li>
+                        <li class="manufactor-rigth__listItem">CLASSE</li>
+                        <li class="manufactor-rigth__listItem"><a href="" class="manufactor-rigth__link">view all</a>
+                        </li>
+
+
+
+
+
+
+                    </ul>
+                </section>
+            </article>
+
+
+
+
+        </main>
+        <footer>
+            <div class="footer_container">
+                <div class="footer_container_left">
+                    <ul>
+                        <li>Hi-Fi Corner</li>
+                        <li>Edinburgh 2 Joppa Road EH15 2EU</li>
+                        <li>Falkirk 44 Cow Wynd FK1 1PU</li>
+                    </ul>
+
+                    <div>
+                        <a href="#">RETURN & REFUNDS</a>
+                    </div>
+                </div>
+
+                <div class="footer_container_right">
+                    <div class="footer_container_right_payments">
+                        <img src="footerpics/worldpay.png" alt="">
+                        <img src="footerpics/visa.png" alt="">
+                        <img src="footerpics/mastercard.png" alt="">
+                        <img src="footerpics/maestro.png" alt="">
+                        <img src="footerpics/jcb.png" alt="">
+                        <img src="footerpics/brand-paypal.png" alt="">
+                    </div>
+
+                    <div class="footer_container_right_socials">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
