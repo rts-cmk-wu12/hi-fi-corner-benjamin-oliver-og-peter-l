@@ -1,0 +1,234 @@
+/*DENNE FIL SKAL SLETTES DA DER ALLEREDE FINDES EN VERSION I VORES MERGE*/
+/*Her impoterer vi vores fonts*/
+@import url(/museo-sans-rounded-webfont/fonts.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4%;
+    margin: 1%;
+}
+
+.price {
+    text-align: end;
+    color: #a39161;
+}
+
+.buttons {
+    margin-top: 5%;
+    margin-bottom: 2%;
+}                       
+
+.buttons > input {
+    background-color: #a39161;
+    color: #ffffff;
+    border: none;
+    padding: 1%;
+}
+
+.border {
+    display: flex;
+    border: #000000;
+    background-color: rgb(225, 225, 225);
+    padding: 5%;
+    margin-bottom: 3%;
+}
+
+.button-border {
+    background-color: #a39161;
+    color: #ffffff;
+    border: none;
+    padding: 1%;
+}
+
+.input-number {
+    width: 7%;
+    padding: 1%;
+}
+
+.info-box {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border: 1px solid rgb(201, 201, 201);
+}
+
+.info-box-left {
+    background-color: rgb(225, 225, 225);
+}
+
+.info-box > div {
+    border: 1px solid rgb(201, 201, 201);
+    padding: 1%;
+}
+
+.title {
+    color: #a39161;
+}
+
+img{
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+
+.img-container > img {
+    flex: 50%;
+    max-width: 76%;
+    width: 76%;
+    display: block;
+}
+
+header{
+    font-family: 'Roboto', sans-serif;
+    /* position: fixed; */
+    width: 100%;
+    z-index: 100;
+}
+ 
+.topnav{
+    height: 3em;
+    justify-content: right;
+    padding-right: 1em;
+    background-color: black;
+    align-items: center;
+    display: flex;
+    gap: 2em;
+}
+ 
+.topnav p{
+    color: white;
+}
+ 
+.topnav_black_line{
+    color: black;
+}
+ 
+.topnav_button{
+    font-size: 10px;
+    color: white;
+    padding: 0.5em;
+    background-color: #1ba4f3;
+    border: none;
+    border-radius: 5px;
+}
+ 
+.navbar{
+    font-size: 13px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 4em;
+    display: flex;
+}
+ 
+.navbar_list{
+    list-style: none;
+    display: flex;
+    gap: 2em;
+}
+ 
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+ 
+.navbar .navbar_active{
+    color: #958153;
+}
+
+.call {
+    background-color: #000;
+    color: #a39161; /* Gold text */
+    text-align: center;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+    /* position: relative; */
+    margin: 3%;
+}
+
+.call i {
+    margin-right: 10px;
+}
+
+.call a {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+.call a:hover {
+    text-decoration: underline;
+}
+
+.des-box {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.des-box-right {
+    text-align: end;
+    margin-right: 50%;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+@media (max-width: 768px) {
+  .cols {
+    grid-template-columns: 1fr;
+}
+
+}
+
+footer {
+    list-style: none;
+    padding: 1em;
+    font-family: 'Roboto', sans-serif;
+    background-color: #a39161;
+}
+ 
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.footer_container a {
+    color: white;
+    font-size: 12px;
+}
+ 
+.footer_container_left {
+    display: flex;
+    gap: 4em;
+   
+}
+ 
+.footer_container_left ul {
+    list-style: none;
+    font-size: 10px;
+}
+ 
+.footer_container_right{
+    display: flex;
+    gap: 15em;
+}
+ 
+.footer_container_right_payments {
+    gap: 0.5em;
+    display: flex;
+    width: 45px;
+    height: 20px;
+}
+ 
+.footer_container_right_socials a{
+    border-radius: 50%;
+   
+    padding: 0.5em;
+    border: 1px solid white;
+}

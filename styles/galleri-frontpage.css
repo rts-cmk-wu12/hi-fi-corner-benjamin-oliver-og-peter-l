@@ -1,0 +1,51 @@
+@import url(style.css);
+
+.header_shop_frontpage {
+    background-color: black;
+}
+
+.shop_frontpage {
+    background-color: black;
+}
+
+.shop_frontpage_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    margin: auto;
+    max-width: 800px;
+}
+
+.shop_frontpage_container a {
+    font-family: 'Museo Sans Rounded', sans-serif;
+    color: white;
+}
+
+
+.shop_frontpage_container article {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop_frontpage_container article a {
+    position: absolute;
+    text-align: center;
+}
+
+
+.shop_frontpage_container_shop_now{
+    justify-content: center;
+    align-items: center;
+    background-color: #a39161;
+}
+
+.shop_frontpage_container_shop_now a{
+    background-color: #685225;
+    text-decoration: none;
+    border: none;
+    padding: 0.75em;
+    color: white;
+    font-weight: 550;
+}

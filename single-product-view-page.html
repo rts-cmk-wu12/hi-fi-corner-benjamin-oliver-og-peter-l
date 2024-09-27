@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>single product view page</title>
+    <script type="module" src="single-product-view-page.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="single-product-view-page.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="topnav">
+                <p><i class="fa-solid fa-location-dot"></i></p>
+                <p><i class="fa-solid fa-phone"></i></p>
+                <p><i class="fa-regular fa-envelope"></i></p>
+            </div>
+            <nav class="navbar">
+                <ul class="navbar_list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="brands.html">BRANDS</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">EVENTS</a></li>
+                    <li><a class="navbar_active" href="shop-frontpage.html">SHOP</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+<div class="cols">
+    <div>
+            <div class="img-container" id="image"></div>
+    </div>
+    
+    <div>
+    <h3 class="title" id="name"></h3>
+    <h2 class="price" id="price"></h2>
+    <div id="description"></div>
+    <div class="buttons">
+        <input type="button" value="stil et spørgsmål">
+        <input type="button" value="del ombytning">
+        <input type="button" value="betal med økonomi">
+        <input type="button" value="set en bedre pris?">
+    </div>
+    <div class="border">
+        
+        <input class="input-number" type="number" id="antal" value="1">
+        <input class="button-border " id="buy" type="button" value="tilføj til vogn">
+    </div>
+    <h3 class="title">ekstra info</h3>
+
+    <div class="info-box">
+        <div class="info-box-left">firma</div>
+        <div id="company"></div>
+
+        <div class="info-box-left">billedopløsning</div>
+        <div id="billedoplosning"> </div>
+
+        <div class="info-box-left">videoudgange</div>
+        <div id="videoudgange"></div>
+
+        <div class="info-box-left">lydudgange</div>
+        <div id="lydudgange"></div>
+
+        <div class="info-box-left">formater</div>
+        <div id="formater"></div>
+
+        <div class="info-box-left">funktioner</div>
+        <div id="funktioner"></div>
+    </div>    
+    
+</div>
+<div>
+<h2 class="title">beskrivelse</h2>
+
+<div class="des-box">
+
+    <div>strømforbrug</div>
+    <div class="des-box-right" id="stromforbrug"></div>
+
+    <div>skærmtype</div>
+    <div class="des-box-right" id="skaermtype"></div>
+
+    <div>mediekontroller</div>
+    <div class="des-box-right" id="mediekontroller"></div>
+
+    <div>kompatible regioner</div>
+    <div class="des-box-right" id="kompatible_regioner"></div>
+</div>
+
+</div>
+</div>
+
+<h1 class="call">
+<a href="tel:+1234567890"><i class="fas fa-phone"></i>CALL US ABOUT THIS PRODUCT</a>
+</h1>
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer_container_left">
+                <ul>
+                    <li>Hi-Fi Corner</li>
+                    <li>Edinburgh 2 Joppa Road EH15 2EU</li>
+                    <li>Falkirk 44 Cow Wynd FK1 1PU</li>
+                </ul>
+ 
+                <div>
+                    <a href="#">RETURN & REFUNDS</a>
+                </div>
+            </div>
+            
+ 
+            <div class="footer_container_right">
+                <div class="footer_container_right_payments">
+                    <img src="footerpics/worldpay.png" alt="">
+                    <img src="footerpics/visa.png" alt="">
+                    <img src="footerpics/mastercard.png" alt="">
+                    <img src="footerpics/maestro.png" alt="">
+                    <img src="footerpics/jcb.png" alt="">
+                    <img src="footerpics/brand-paypal.png" alt="">
+                </div>
+ 
+                <div class="footer_container_right_socials">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+ 
+            </div>
+        </div>
+    </footer>
+
+</main>
+</div>
+</body>
+</html>

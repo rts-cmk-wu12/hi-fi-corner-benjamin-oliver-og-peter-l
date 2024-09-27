@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles/cart.css">
+     <script defer src="burgermenu.js"></script>
+    <title>Cart</title>
+    <script src="cartInsert.js" type="module"></script>
+</head>
+
+<body>
+    <header class="header_shop_frontpage">
+        <div class="topnav">
+            <i class="fa-solid fa-bars burgermneuButton"></i>
+            <i class="fa-solid fa-xmark burgermneuCloseButton"></i>
+            <p class="topnav_right_icon_text"><i class="fa-solid fa-user" style="color: #999999;"></i> ACCOUNT</p>
+            <p class="topnav_right_icon_text cart"><i class="fa-solid fa-cart-shopping" style="color: #999999;"></i>
+                CART</p>
+            <p><i class="fa-solid fa-location-dot"></i></p>
+            <p><i class="fa-solid fa-phone"></i></p>
+            <p><i class="fa-regular fa-envelope"></i></p>
+        </div>
+        <nav class="navbar">
+            <ul class="navbar_list">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="brands.html">BRANDS</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">EVENTS</a></li>
+                <li><a class="navbar_active" href="shop-frontpage.html">SHOP</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="cart_container">
+
+            <div class="customer_info">
+                <h2>Customer Information</h2>
+                <form>
+                    <div class="form_group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                </form>
+            </div>
+
+
+            <h1>Your Cart</h1>
+            <div class="cart_items">
+                <!-- De ting som er blevet lagt i kurven kan være her -->
+            </div>
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="subtotal">
+                    <span>Subtotal:</span>
+                    <span id="subtotal-amount">0.00.kr</span>
+                </div>
+                <div class="shipping">
+                    <span>Shipping:</span>
+                    <span id="shipping-amount">0.00.kr</span>
+                </div>
+                <div class="total">
+                    <span>Total:</span>
+                    <span id="total-amount">0.00.kr</span>
+                </div>
+                <button class="checkout_btn">Proceed to Checkout</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

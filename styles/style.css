@@ -1,0 +1,201 @@
+
+
+
+
+/*Her impoterer vi vores fonts*/
+@import url(/museo-sans-rounded-webfont/fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+
+header {
+    font-family: 'Roboto', sans-serif;
+}
+/*Her kommer css koden til burgermenuen*/
+.topnav {
+    height: 3em;
+    justify-content: right;
+    padding-right: 1em;
+    background-color: black;
+    border-bottom: solid 1px #413a27;
+    align-items: center;
+    display: flex;
+    gap: 2em;
+}
+
+.topnav p {
+    color: white;
+}
+
+.topnav_black_line {
+    color: black;
+}
+
+.topnav_button {
+    font-size: 10px;
+    color: white;
+    padding: 0.5em;
+    background-color: #1ba4f3;
+    border: none;
+    border-radius: 5px;
+}
+.navbar {
+    font-size: 13px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 4em;
+    display: flex;
+}
+
+.navbar_list li{
+    display: none;
+    
+
+}
+
+.burgermneuButton{
+    font-size: 2rem;
+    color: white;
+    justify-self: flex-start;
+    order: 10;
+}
+/*her erstylingen til  x knappen, altså den knap det lukker burgermenuen*/
+.burgermneuCloseButton{
+    display: none;
+}
+.burgermneuCloseButton--open{
+    display: block;
+    font-size: 4rem;
+    color: white;
+    position: fixed;
+    top: 5rem;
+    right: 3rem;
+   z-index: 101;
+}
+/*Dette er stylingen menuen i burger menuen*/
+.navbar_list--burger {
+    position: fixed;
+   margin: 0;
+    padding-top: 60rem;
+    background-color: black;
+    width: 100vw;
+    justify-items: center; 
+    z-index: 100;
+    font-size: 2rem;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    padding-bottom: 10rem;
+    flex-direction: column;
+    gap: 5.5rem;
+}
+.navbar_list--burger li a{
+    display: flex;
+    display: block;
+    text-align: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .navbar_active {
+    color: #958153;
+}
+
+/*Her kommer koden til footeren */
+
+
+footer {
+    list-style: none;
+    padding: 1em;
+    font-family: 'Roboto', sans-serif;
+    background-color: #a39161;
+}
+
+
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_container a {
+    color: white;
+    font-size: 12px;
+}
+
+.footer_container_left {
+    display: flex;
+    gap: 4em;
+
+}
+
+.footer_container_left ul {
+    font-weight: 600;
+    list-style: none;
+    font-size: 10px;
+}
+
+.footer_container_right {
+    display: flex;
+    gap: 15em;
+}
+
+.footer_container_right_payments {
+    gap: 0.5em;
+    display: flex;
+    width: 45px;
+    height: 20px;
+}
+
+.footer_container_right_socials a {
+    border-radius: 50%;
+    padding: 0.5em;
+    border: 1px solid white;
+}
+@media only screen and (min-width: 600px) {
+    
+    
+    .navbar {
+        font-size: 13px;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        height: 4em;
+        display: flex;
+    }
+    
+    .navbar_list {
+        list-style: none;
+        display: flex;
+        gap: 2em;
+    }
+    
+    .navbar a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .navbar .navbar_active {
+        color: #958153;
+    }
+    .burgermneuButton{
+        display: none; 
+    }
+    .navbar_list li{
+        display: block;
+    
+    }
+    }
